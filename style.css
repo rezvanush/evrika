@@ -1,0 +1,572 @@
+body{
+	width: 1400px;
+	margin: 0 auto;
+    padding: 0;
+    font-family: "ProximaNovaCond" sans-serif;
+    font-stretch: condensed;
+    background-color: #f4f4f4;
+}
+.header{
+	position: relative;
+	width: 100%;
+	height: 148px;
+}
+.innerHeader{
+	position: relative;
+	width: 960px;
+	height: 88px;
+	margin: 0 auto;
+}
+.logo {
+  background-image: url("images/лого.png");
+  position: absolute;
+  top: 14px;
+  width: 152px;
+  height: 55px;
+  z-index: 110;
+}
+.quetion {
+  background-image: url("images/quetion.png");
+  position: absolute;
+  right: 120px;
+  top: 29px;
+  width: 24px;
+  height: 24px;
+  z-index: 111;
+}
+#quetion {
+  font-size: 14px;
+  font-family: "ProximaNovaCond";
+  color: rgb( 85, 85, 85 );
+  text-transform: uppercase;
+  position: absolute;
+  right:0;
+  top: 34.25px;
+  z-index: 112;
+}
+nav{
+	position: relative;
+	width: 100%;
+	height: 60px;
+	background-color: #333333;
+}
+.navbar{
+	position: relative;
+	width: 960px;
+	height: 100%;
+	margin: 0 auto;
+	background-color: #333333;
+}
+
+nav ul{
+    position: relative;
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+nav li {
+    display: inline-block;
+    margin: 0px;
+    padding: 0 15px;
+    float:left;
+    position:relative;
+    list-style:none;
+}
+nav li:hover {
+	background-color: #008dd2;
+}
+.navbar li:hover #dropdawn{
+	display: block;
+}
+.navbar ul li a {
+	font-size: 14px;
+	font-family: "ProximaNovaCond" sans-serif;
+	font-weight: bold;
+    color: rgb( 244, 244, 244 );
+    text-transform: uppercase;
+    padding: 0 5px;
+    text-decoration: none;
+    line-height: 30px;
+    font-stretch: condensed;
+    display: block;
+    height: 45px;
+    margin-top: 15px;
+}
+
+#dropdawn{
+	position: absolute;
+	display: none;
+	z-index: 999;
+	width: 230px;
+	height: 198px;
+	left: -15px;
+	background-color: #008dd2;
+	margin-left: 15px; 
+
+}
+#dropdawn li{
+	display: block;
+	width: 200px;
+	line-height: 20px;
+	height: 48px;
+}
+#dropdawn li:hover {
+	background-color: #555555;
+}
+#dropdawn li:hover a{
+	text-decoration: none;
+}
+#dropdawn li a span{
+	float: right;
+	margin-top:5px; 
+}
+#dropdawn li a{
+	color: white;
+	display: block;
+	text-transform: none;
+	font-weight: 100;
+	text-decoration: underline;
+	font-size: 16px;
+	width: 200px;
+    height: 48px;
+    margin-top: auto 0;
+	line-height: 20px;
+}
+#dropdawn li:last-child a{
+	margin-top: 4px;
+}
+#dropdawn li:hover #innerDropdawn{
+	display: block;
+}
+
+#innerDropdawn{
+	position: absolute;
+	display: none;
+	left: 230px;
+	width: 230px;
+	padding: 10px;
+	top: 0px;
+	padding: 0 0 5px 0;
+	background-color: #555555;
+}
+
+#innerDropdawn li{
+	padding-top: 0;
+	display: block;
+	width: 200px;
+	line-height: 20px;
+	height: 48px;
+}
+#innerDropdawn li:hover {
+	background-color: #008dd2;
+}
+#innerDropdawn li a{
+	color: rgb( 136, 136, 136 );
+}
+#innerDropdawn li:hover a{
+	text-decoration: none;
+	color: white;
+}
+#searchTop{
+	border: 0;
+	width: 180px;
+	float: right;
+	font-size: 1em;
+	padding-left: 40px; 
+	color: white;
+	height: 98%;
+	background: #282828 url(images/search.png) 15px no-repeat;
+}
+input[type="search"]:focus {
+	background: #282828;
+	outline: none;
+}
+input[type="search"]::-webkit-search-cancel-button{
+    -webkit-appearance: none;
+}
+form{
+	margin: 0;
+	padding: 0;
+}
+/*Слайдер*/
+.banner{
+ 	position: relative;
+ 	margin: 24px auto;
+ 	width: 1352px;
+ 	height: 419px;
+ 	z-index: 72;
+ 	overflow: hidden;
+}
+.slider ul,
+.slider li {
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+}
+.slider ul {
+	width: 9999px;
+}
+.slider img{
+	width: 1352;
+	height: 419;
+}
+.slider ul li {
+	list-style-type: none;
+	float: left;
+	width: 1352px;
+	height: 419px;
+	left: 400px;
+}
+.control {
+	position: absolute;
+	bottom: 0;
+}
+#prev{
+	position: absolute;
+	opacity: 0.502;
+	width: 30px;
+	height: 64px;
+	top: 140px;
+	left: 200px;
+	cursor: pointer;
+	display: none;
+}
+#next{
+	position: absolute;
+	opacity: 0.502;
+	width: 30px;
+	height: 64px;
+	top: 140px;
+	right: 200px;
+	cursor: pointer;
+}
+.section{
+   position: absolute;
+   margin: 24px auto;
+   width: 1352px;
+   height: 250px;
+   overflow: hidden;
+}
+.section ul,
+.section li {
+   padding: 0;
+   margin: 0;
+   list-style-type: none;
+}
+.section ul {
+	position: absolute;
+   width: 9999px;
+   left: 316px;
+}
+.section ul li {
+   list-style-type: none;
+   float: left;
+   width: 720px;
+   height: 250px;
+   margin-left: 720px;
+}
+.section ul li:first-child{
+   margin-left: 0px;
+}
+.section h1{
+  font-size: 72px;
+  font-family: "ProximaNovaCond" sans-serif;
+  color: rgb( 255, 255, 255 );
+  font-weight: bold;
+  line-height: 0.833;
+  text-align: left;
+}
+
+.section p{
+  font-size: 18px;
+  font-family: "ProximaNovaCond" sans-serif;
+  color: rgb( 255, 255, 255 );
+  text-align: left;
+}
+.control{
+	position: absolute;
+	top: 270px;
+	left: 316px;
+}
+.control span {
+	opacity: 0.9;
+	background: #333333;
+	margin: 0 8px 0 0;
+	width: 16px;
+	height: 16px;
+	border-radius: 8px;
+	cursor: pointer;
+	overflow: hidden;
+	display: block;
+	float: left;
+	box-shadow: 0 1px 2px #000;
+}
+.control span.on {
+	background: #008dd2;
+}
+
+/*Страница*/
+.page {
+    position: relative;
+    width: 960px;
+    margin: 0 auto;
+    font-size: 14px;
+  	font-family: "ProximaNovaCond" sans-serif;
+  	color: rgb( 85, 85, 85 );
+}
+#box{
+    position: relative;
+    max-width: 960px;
+    margin: 0 auto;
+    height: 162px;
+    top: -100px;
+    background-color: #FFFFFF;
+    z-index: 999;
+    padding: 0 30px;
+    font-size: 14px;
+  	font-family: "ProximaNovaCond" sans-serif;
+  	color: rgb( 85, 85, 85 );
+  	text-transform: uppercase;
+  	line-height: 1.286;
+  	text-align: center;
+  	overflow: hidden;
+	box-shadow: 0 5px 0px 0px #e8e8e8;
+}
+#innerBox{
+	position: relative;
+	float: left;
+	width: 225px;
+	height: 112px;
+	padding: 25 0px;
+}
+figure {
+	margin: 0;
+    display: block;
+    width: 220px;
+    float: left;
+	text-align: center;
+}
+figure p{
+	margin-top: 0;
+}
+.content{
+	position: relative;
+	margin-top: -60px;
+	font-family: "ProximaNovaCond" sans-serif;
+  	color: rgb( 51, 51, 51 );
+  	text-align: left;
+}
+.content h1{
+	font-size: 22px;
+  	color: rgb( 51, 51, 51 );
+}
+.content p{
+	font-size: 18px;
+	color: rgb( 85, 85, 85 );
+}
+
+.container{
+    max-width: 960px;
+    margin: 0 auto;
+    height: 355px;
+    font-size: 14px;
+  	font-family: "ProximaNovaCond" sans-serif;
+  	color: rgb( 85, 85, 85 );
+  	text-transform: uppercase;
+  	line-height: 1.286;
+  	text-align: center;
+  	overflow: hidden;
+}
+.innerCont{
+	position: relative;
+	background-color: white;
+	overflow: hidden;
+	float: left;
+	width: 221px;
+	height: 355px;
+	margin-left: 25px; 
+}
+.innerCont:first-child{
+	margin-left: 0px;
+}
+.innerCont h4{
+	position: relative;
+	width: 170px;
+	margin: 0 auto;
+	top: 20px
+}
+.innerCont h4 a{
+	font-size: 18px;
+	font-family: "ProximaNovaCond" sans-serif;
+	color: rgb( 85, 85, 85 );
+	font-weight: bold;
+	text-transform: none;
+	text-decoration: underline;
+	text-align: center;
+}
+.innerCont img{
+	position: relative;
+	bottom: -45px;
+}
+.hiddenCont{
+	display: none;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: #008dd2;
+	top: 0;
+}
+.innerCont > div > h4 > a{
+	color: white;
+}
+.hiddenCont ul{
+	position: absolute;
+	width: 150px;
+	left: 10px;
+	margin-top: 50px; 
+	list-style-image:url(images/list.png); 
+}
+.hiddenCont li{
+	font-size: 18px;
+  	font-family: "ProximaNovaCond" sans-serif;
+  	color: rgb( 255, 255, 255 );
+  	font-weight: 100;
+  	line-height: 1;
+  	text-align: left;
+  	text-transform: none;
+  	padding-left: 10px;
+  	margin-bottom: 15px;
+}
+.hiddenCont li span{
+	position: relative;
+	top: -5px
+}
+.hiddenCont input{
+
+}
+.hiddenCont input{
+    border-width: 1px;
+	border-color: rgb( 255, 255, 255 );
+	border-style: solid;
+	border-radius: 3px;
+	background-color: rgb( 255, 255, 255 );
+	font-weight: bold;
+	color: #008dd2;
+	position: absolute;
+	left: 21.5px;
+	bottom: 21.5px;
+	width: 178px;
+	height: 41px;
+}
+.hiddenCont input:hover {
+    background-color: #008dd2;
+    color: white;
+    cursor: pointer;
+
+}
+footer{
+	position: relative;
+	width: 100%;
+	background-color: red;
+	height: 200px;
+	margin-top: 50px; 
+}
+.footerTop{
+	width: 100%;
+	height: 140px;
+	margin: 0 auto;
+	background-color: #e5e5e5;
+}
+.footerBottom{
+	width: 100%;
+	height: 60px;
+	background-color: #333333; 
+}
+.innerFooterTop{
+	width: 960px;
+	margin: 0 auto;
+}
+.innerFooterBottom{
+	width: 960px;
+	margin: 0 auto;
+}
+/*Подвал*/
+footer img{
+	position: relative;
+	margin-top: 40px;
+	float: left;    
+}
+#footerImg{
+	filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: url(desaturate.svg#greyscale);
+    filter: gray;
+    -webkit-filter: grayscale(1);
+}
+.menu ul{
+    position: relative;
+    float: right;
+    margin: 0;
+    padding: 0;
+    margin-top: 40px;
+}
+.menu ul li {
+    display: inline-block;
+    margin: 0px;
+    padding: 15px;
+    padding-left: 40px;
+    padding-right: 0;
+    float: left;
+    width: 150px;
+    position:relative;
+    list-style:none;
+}
+.menu ul li a {
+	font-size: 14px;
+	font-family: "ProximaNovaCond" sans-serif;
+	font-weight: 800;
+	color: rgb( 85, 85, 85 );
+    text-transform: uppercase;
+    padding: 0 5px;
+    text-decoration: none;
+    display: block;
+    height: 30px;
+}
+#searchBottom{
+	border: 0;
+	width: 180px;
+	float: left;
+	font-size: 1em;
+	padding-left: 40px; 
+	color: white;
+	height: 98%;
+	background: #282828 url(images/search.png) 15px no-repeat;
+}
+.footerBottom span{
+	font-size: 14px;
+	font-family: "ProximaNovaCond";
+	color: rgb( 136, 136, 136 );
+	text-transform: uppercase;
+}
+#copyright{
+	position: relative;
+	float: left;
+	width: 450px;
+	top: 20px;
+	left: 40px;
+}
+#evrika{
+	position: relative;
+	float: right;
+	width: 320px;
+	left: 10px;
+	top: 20px;
+}
+#evrika img{
+	margin: 0;
+	margin-right: 10px; 
+	top: -5px
+}

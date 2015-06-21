@@ -162,6 +162,7 @@ nav li:hover {
 }
 #innerDropdawn li a{
 	color: rgb( 136, 136, 136 );
+	text-decoration: underline;
 }
 #innerDropdawn li:hover a{
 	text-decoration: none;
@@ -239,6 +240,12 @@ form{
 	top: 140px;
 	right: 200px;
 	cursor: pointer;
+}
+#layer{
+	position: absolute;
+	width: 1352px;
+	height: 419px;
+	background-color: rgba(137, 137, 137, .5);
 }
 .section{
    position: absolute;
@@ -439,12 +446,9 @@ figure p{
 }
 .hiddenCont li span{
 	position: relative;
-	top: -5px
+	top: -5px;
 }
-.hiddenCont input{
-
-}
-.hiddenCont input{
+.hiddenCont .input{
     border-width: 1px;
 	border-color: rgb( 255, 255, 255 );
 	border-style: solid;
@@ -452,13 +456,18 @@ figure p{
 	background-color: rgb( 255, 255, 255 );
 	font-weight: bold;
 	color: #008dd2;
+	text-decoration: none;
 	position: absolute;
 	left: 21.5px;
 	bottom: 21.5px;
 	width: 178px;
 	height: 41px;
 }
-.hiddenCont input:hover {
+.hiddenCont .input span{
+	position: relative;
+	top: 12px;
+}
+.hiddenCont .input:hover {
     background-color: #008dd2;
     color: white;
     cursor: pointer;
